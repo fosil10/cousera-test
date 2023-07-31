@@ -17,6 +17,18 @@ body {
     flex-direction: column;
 }
 
+/* brand tittle */
+#brand {
+    float: left;
+    overflow: auto;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px aqua;
+
+}
+
 #home {
     background-color: white;
     padding: 10px;
@@ -41,6 +53,7 @@ nav ul {
 nav li {
     display: inline-block;
     margin: 0 10px;
+    clear: left;
 }
 
 nav a {
@@ -144,10 +157,20 @@ p {
 footer {
     background-color: #f7c873;
     padding: 10px; /* Atur padding sesuai kebutuhan */
-    color: #black; /* Atur warna teks jika diperlukan */
+    color: black; /* Atur warna teks jika diperlukan */
     text-align: center; /* Atur tata letak teks ke tengah */
     /* Optional: Jika ada elemen lain di dalam footer yang melebihi ketinggian footer */
-    position: fixed;
+    position: static;
     bottom: 0;
     width: 100%; 
   }
+
+  /* test bootstrap  */
+  .row {
+    margin-bottom: 15px;
+  }
+
+.row > div {
+    border: 2px solid red;
+    background-color: gray;
+}
